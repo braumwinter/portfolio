@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('assets/font/PTSans-Regular.eot');
+    src: url('assets/font/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/PTSans-Regular.woff2') format('woff2'),
+        url('assets/font/PTSans-Regular.woff') format('woff'),
+        url('assets/font/PTSans-Regular.ttf') format('truetype'),
+        url('assets/font/PTSans-Regular.svg#PTSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe WP';
+    src: url('assets/font/SegoeWP-Light.eot');
+    src: url('assets/font/SegoeWP-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/SegoeWP-Light.woff2') format('woff2'),
+        url('assets/font/SegoeWP-Light.woff') format('woff'),
+        url('assets/font/SegoeWP-Light.ttf') format('truetype'),
+        url('assets/font/SegoeWP-Light.svg#SegoeWP-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeWP';
+    src: url('assets/font/SegoeWP.eot');
+    src: url('assets/font/SegoeWP.eot') format('embedded-opentype'),
+         url('assets/font/SegoeWP.woff2') format('woff2'),
+         url('assets/font/SegoeWP.woff') format('woff'),
+         url('assets/font/SegoeWP.ttf') format('truetype'),
+         url('assets/font/SegoeWP.svg#SegoeWP') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AsapRegular';
+    src: url('assets/font/AsapRegular.eot');
+    src: url('assets/font/AsapRegular.eot') format('embedded-opentype'),
+         url('assets/font/AsapRegular.woff2') format('woff2'),
+         url('assets/font/AsapRegular.woff') format('woff'),
+         url('assets/font/AsapRegular.ttf') format('truetype'),
+         url('assets/font/AsapRegular.svg#AsapRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('assets/font/OpenSansRegular.eot');
+    src: url('assets/font/OpenSansRegular.eot') format('embedded-opentype'),
+         url('assets/font/OpenSansRegular.woff2') format('woff2'),
+         url('assets/font/OpenSansRegular.woff') format('woff'),
+         url('assets/font/OpenSansRegular.ttf') format('truetype'),
+         url('assets/font/OpenSansRegular.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LucidaSans';
+    src: url('assets/font/LucidaSans.eot');
+    src: url('assets/font/LucidaSans.eot') format('embedded-opentype'),
+         url('assets/font/LucidaSans.woff2') format('woff2'),
+         url('assets/font/LucidaSans.woff') format('woff'),
+         url('assets/font/LucidaSans.ttf') format('truetype'),
+         url('assets/font/LucidaSans.svg#LucidaSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansNarrow';
+    src: url('assets/font/PTSansNarrow.eot');
+    src: url('assets/font/PTSansNarrow.eot') format('embedded-opentype'),
+         url('assets/font/PTSansNarrow.woff2') format('woff2'),
+         url('assets/font/PTSansNarrow.woff') format('woff'),
+         url('assets/font/PTSansNarrow.ttf') format('truetype'),
+         url('assets/font/PTSansNarrow.svg#PTSansNarrow') format('svg');
+}
