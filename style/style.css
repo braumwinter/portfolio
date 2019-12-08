@@ -1,0 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  color: #FFFFFF;
+  background-color: #131313;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
