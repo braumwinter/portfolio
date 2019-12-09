@@ -1,0 +1,927 @@
+@import "font.css";
+
+/* General settings */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 640px;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+html,
+body {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#section-header-banner {
+    height: 389px;
+    background-image: none;
+}
+
+#section-features {
+    height: 171px;
+    margin-top: 0px;
+    background-image: url(../assets/img/features-mobile.png);
+}
+
+#section-scroll {
+    height: 484px;
+    background-image: none;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+#section-advantage {
+    height: 466px;
+    background-image: none;
+    background-color: #474747;
+}
+
+#section-footer {
+    height: 64px;
+    background-color: #4c4c4c;
+    -webkit-box-shadow: -0.105px -2.998px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: -0.105px -2.998px 5px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+    display: block;
+    height: auto;
+    margin: 0;
+}
+
+/* Header */
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 62px;
+    justify-content: space-between;
+}
+
+.header .logo,
+.nav {
+    width: 50%;
+    margin: 28px 0 0 0;
+}
+
+.header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 186px;
+    height: 62px;
+    margin: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#434343), to(#5d5d5d));
+    background-image: -o-linear-gradient(bottom, #434343 0%, #5d5d5d 100%);
+    background-image: linear-gradient(0deg, #434343 0%, #5d5d5d 100%);
+}
+
+#svg-header {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background-image: url(../assets/img/logo.png);
+    background-size: cover;
+    margin: -2px 0 0 11px;
+    z-index: 50;
+}
+
+.header-logo-back,
+.header-logo-front {
+    width: 85px;
+    height: 85px;
+    fill: #f5c506;
+}
+
+.header-logo-back {
+    opacity: 0.502;
+}
+
+#logo-name {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    margin: 4px 0 0 6px;
+    padding: 0;
+}
+
+#logo-name h1 {
+    font-size: 19px;
+    text-shadow: 1px 1.732px 0px rgba(0, 0, 0, 0.42);
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 41px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "LucidaSans";
+    font-style: oblique;
+    font-weight: normal;
+    text-align: center;
+}
+
+.nav {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+#nav-button {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    width: 454px;
+    height: 62px;
+    margin: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f5c505), to(#f5c505));
+    background-image: -o-linear-gradient(bottom, #f5c505 0%, #f5c505 100%);
+    background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    cursor: pointer;
+}
+
+.nav-button-shadow-first,
+.nav-button-shadow-second {
+    display: none;
+}
+
+#about-us,
+#services,
+#contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 0;
+}
+
+#about-us,
+#services {
+    border-right: 1px solid #b99403;
+}
+
+#about-us {
+    width: 172px;
+    padding-left: 23px;
+}
+
+#about-us h3 {
+    padding-left: 5px;
+}
+
+#services {
+    width: 133px;
+    padding-left: 8px;
+}
+
+#services h3 {
+    padding-left: 2px;
+}
+
+#contact {
+    padding-left: 13px;
+    padding-bottom: 3px;
+}
+
+#contact h3 {
+    padding-left: 5px;
+}
+
+.svg-nav,
+#nav-button svg {
+    fill: #b99403;
+}
+
+#svg-about-us,
+#svg-box-about-us {
+    width: 22px;
+    height: 20px;
+}
+
+#svg-services,
+#svg-box-services {
+    width: 20px;
+    height: 20px;
+}
+
+#svg-contact,
+#svg-box-contact {
+    width: 25px;
+    height: 19px;
+}
+
+#nav-button h3 {
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: "Segoe WP";
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 9px;
+}
+
+/* Banner */
+
+.banner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 237px;
+    padding: 0;
+}
+
+#slider-button-previous,
+#slider-button-next {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 327px;
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 327px;
+    object-fit: cover;
+}
+
+#slide-title,
+#slide-title-heder,
+#slide-title-text {
+    display: none;
+}
+
+#controls {
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+}
+
+#play-button {
+    position: absolute;
+    margin: 129px auto auto -346px;
+}
+
+.play-button-ellipse,
+.play-button-shape,
+#play-button {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+}
+
+.play-button-ellipse {
+    opacity: 0.722;
+    fill: #f5c506
+}
+
+.play-button-shape {
+    fill: #f5f4f2;
+}
+
+#control-play-button {
+    position: absolute;
+    padding: 0;
+    border: none;
+    width: 27px;
+    height: 27px;
+    background-color: #f5c5062A;
+    background-image: url(../assets/img/play-button.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    margin: 278px auto auto -557px;
+}
+
+#play-progress {
+    position: absolute;
+    display: inline-block;
+    margin: 274px auto auto -508px;
+}
+
+#volume {
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin: 285px auto auto -73px;
+}
+
+.svg-volume-button {
+    width: 16px;
+    height: 15px;
+    fill: #f5c506
+}
+
+.slider-button-prev-rectangle,
+.slider-button-prev-shape,
+#slider-button-previous {
+    width: 32px;
+    height: 58px;
+}
+
+.slider-button-prev-rectangle,
+.slider-button-next-rectangle {
+    opacity: 0.71;
+    fill: #f5c506
+}
+
+.slider-button-prev-shape,
+.slider-button-next-shape {
+    fill: #ffffff;
+}
+
+#slider-button-previous {
+    position: absolute;
+    display: inline-block;
+    margin: 130px auto auto auto;
+}
+
+.slider-button-prev-rectangle,
+.slider-button-prev-shape,
+#slider-button-previous {
+    width: 33px;
+    height: 58px;
+}
+
+#slider-button-next {
+    position: absolute;
+    display: inline-block;
+    width: 33px;
+    height: 58px;
+    top: 188px;
+    right: 0;
+    left: auto;
+    bottom: auto;
+}
+
+#slider-button-previous,
+#slider-button-next {
+    cursor: pointer;
+}
+
+/* Features */
+
+#features-mobile {
+    position: absolute;
+    display: block;
+    margin-top: -10px;
+}
+
+.features {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 175px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.div-features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 341px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 0;
+}
+
+.content-features,
+#svg-its-free,
+#svg-customise {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.svg-features {
+    fill: #f5c506;
+}
+
+#svg-features-free,
+#svg-its-free,
+#img-its-free {
+    width: 71px;
+    height: 80px;
+    padding-bottom: 10px;
+    margin-right: 28px;
+}
+
+#svg-features-customise,
+#svg-customise,
+#img-customise {
+    width: 101px;
+    height: 83px;
+    padding-left: 18px;
+    padding-bottom: 12px;
+}
+
+#svg-features-design {
+    width: 110px;
+    height: 75px;
+}
+
+#svg-better-design,
+#img-better-design {
+    width: 122px;
+    height: 79px;
+    padding-left: 18px;
+    padding-bottom: 18px;
+}
+
+.features {
+    margin: 0;
+}
+
+.features p {
+    font-size: 23px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
+}
+
+.content-features {
+    margin: auto auto 30px;
+}
+
+#content-features-design p {
+    margin-left: 15px;
+    margin-bottom: 2px;
+}
+
+#content-features-customise p {
+    margin-left: 18px;
+    margin-bottom: 2px;
+}
+
+#content-features-free p {
+    margin-left: -17px;
+    margin-bottom: 1px;
+}
+
+.features p {
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#content-features-design {
+    margin: 4px 0 0 -41px;
+}
+
+#content-features-design p {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+#content-features-free {
+    margin: 0 0 4px 19px;
+}
+
+/* Scroll */
+.scroll {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#scroll-title {
+    display: none;
+}
+
+#scroll-sliders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 233px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#scroll-first-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 9px 10px;
+}
+
+#scroll-slide-description {
+    display: inline-block;
+    width: 341px;
+    height: 100%;
+    background-color: #ec9e03;
+    padding-top: 15px;
+    padding-left: 30px;
+    margin: 0;
+    border: 0;
+}
+
+#scroll-second-slider {
+    display: flex;
+    width: 100%;
+    background-color: #ec9e03;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#scroll-slide-description {
+    width: 298px;
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+#scroll-slide-description p {
+    font-size: 29px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+}
+
+#scroll-first-slider video {
+    position: relative;
+    display: inline-block;
+    width: 314px;
+    height: 233px;
+    margin: 0 0 0 9px;
+    object-fit: cover;
+    border: 0;
+}
+
+#scroll-second-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 328px;
+    height: 100%;
+    background-color: #ec9e03;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 3px;
+}
+
+#scroll-second-slider-twitter {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+#twitter-chat {
+    display: none;
+}
+
+#scroll-title-second-slider {
+    display: none;
+}
+
+
+
+#svg-scroll-second-slider {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #f5c507;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto 14px;
+}
+
+.svg-twitter {
+    width: 164px;
+    height: 134px;
+    fill-opacity: 0.902;
+    fill: #bc7d00
+}
+
+.scroll-control {
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+}
+
+.scroll-video-ellipse {
+    opacity: 0.722;
+    fill: #f5c506
+}
+
+.scroll-control-second {
+    display: none;
+}
+
+.scroll-video-shape {
+    fill: #f5f4f2;
+}
+
+#svg-scroll-video-control {
+    position: absolute;
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    margin: 92px 0 0 437px;
+    cursor: pointer;
+}
+
+.scroll-control-first,
+.scroll-control-second {
+    width: 12px;
+    height: 12px;
+    opacity: 0.702;
+    fill: #ffffff
+}
+
+#svg-scroll-slider-control-first,
+#svg-scroll-slider-control-second {
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+
+#svg-scroll-slider-control-first {
+    margin: 202px 0 0 275px;
+}
+
+#svg-scroll-slider-control-second {
+    margin: 90px 0 0 144px;
+}
+
+#svg-scroll-video-control {
+    margin: 92px 0 0 436px;
+}
+
+#scroll-date,
+#scroll-progress-bar {
+    display: none;
+}
+
+#scroll-date h3 {
+    font-size: 51px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: bold;
+}
+
+#scroll-date p {
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #b26529;
+    font-family: "Segoe UI";
+    text-transform: uppercase;
+}
+
+#scroll-slide-description p {
+    line-height: 34px;
+}
+
+#scroll-second-slider-twitter {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 31px 0 0 4px;
+}
+
+#twitter-chat {
+    width: 50%;
+    height: 100%;
+    margin-left: -4px;
+    padding: 23px 0 0 4px;
+}
+
+#advantage-name {
+    display: block;
+    width: 100%;
+    height: 137px;
+    padding: 36px;
+    text-align: center;
+}
+
+#advantage-name h3 {
+    font-size: 43px;
+    letter-spacing: 0px;
+    color: #f5c506;
+    font-family: "PT Sans";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#advantage-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 0 18px;
+}
+
+#advantage-img {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+#advantage-info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 400px;
+    margin: 44px 0 0 80px;
+}
+
+#advantage-list {
+    list-style: none;
+}
+
+.advantage-item {
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #a9a9a7;
+    font-family: "OpenSansRegular";
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 23px;
+}
+
+.advantage-item:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.advantage-item::before {
+    content: "";
+    background: #f5c506;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#sale {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 117px;
+    height: 117px;
+    background-color: #f5c506;
+    border: 0;
+    border-radius: 100%;
+    margin: -43px 0 0 -20px;
+}
+
+#sale p {
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PTSansNarrow";
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+/* Footer */
+
+.footer .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#svg-footer {
+    display: inline-block;
+    background-image: url(../assets/img/logo.png);
+    width: 56px;
+    height: 56px;
+    margin: 5px 0 0 0px;
+}
+
+#logo-name-footer {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    margin: 6px 0 0 3px;
+}
+
+.footer h1 {
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "LucidaSans";
+    font-style: italic;
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-shadow: 1px 1.732px 0px rgba(0, 0, 0, 0.42);
+}
+
+.newButton {
+    position: fixed;
+
+    top: 10px;
+    right: 10px;
+
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.newButton:last-of-type {
+    top: 50px;
+}

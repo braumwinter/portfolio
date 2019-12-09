@@ -12,10 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
         buttonDesktop.onclick = function () {
             if (isMobile) {
                 buttonDesktop.innerHTML = 'mobile';
-                body.style.width = width;
+                disableStyleSheets('../../projects/repair-design-project/styles/style.min.css');
+                addStyleSheets('../../projects/repair-design-project/styles/style.css');
             } else {
                 buttonDesktop.innerHTML = 'desktop';
-                body.style.width = '479px';
+                disableStyleSheets('../../projects/repair-design-project/styles/style.css');
+                addStyleSheets('../../projects/repair-design-project/styles/style.min.css');
             }
 
             isMobile = !isMobile;
@@ -31,3 +33,23 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     document.getElementsByTagName('body')[0].append(buttonBack);
 });
+
+function addStyleSheets (href) {
+    let head = document.head;
+    let link = document.createElement('link');
+
+    link.rel = 'stylesheet';
+    link.href = href;
+
+    head.appendChild(link);
+}
+
+function disableStyleSheets (href) {
+    let styles = document.styleSheets;
+
+    for (let i in styles) {
+        if (styles[i].href == href) {
+            styles[i].disabled = true;
+        }
+    }
+}
